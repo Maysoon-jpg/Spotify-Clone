@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Spotify Clone</title>
+  <link rel="stylesheet" href="Styles/Headers.css">
+  <link rel="stylesheet" href="Styles/Page.css">
+  <link rel="stylesheet" href="Styles/Bottom.css">
+  <link rel="stylesheet" href="Styles/Side-bar.css">
+
+</head>
+<style>
+  .scrolling-frame::-webkit-scrollbar {
+    width: 0px;
+    /* Hide */
+  }
+
+  .scrolling-frame:hover::-webkit-scrollbar {
+    width: 13px;
+    /* Show on hover */
+  }
+
+  .scrolling-frame:hover::-webkit-scrollbar-track {
+    background-color: #24262900;
+  }
+
+  .scrolling-frame:hover::-webkit-scrollbar-thumb {
+    background-color: rgb(43, 80, 247);
+    border-radius: 10px;
+  }
+
+
+
+  .middle {
+
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+
+
+
+  }
+
+  .top-middle {
+    height: 200px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+
+  }
+
+  .main-area-image {
+    width: 80%;
+
+    min-width: 180px;
+    height: auto;
+
+
+
+    border-radius: 10px;
+  }
+
+  .main-area {
+    height: 100%;
+    margin-left: 10px;
+    padding-top: 60px;
+    padding-left: 30px;
+
+
+    border-radius: 10px;
+    flex: 1;
+    background-color: #3c3f44;
+
+  }
+
+  .playlist-text {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .liked-songs {
+    margin: 10px 0px 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 4vw;
+    color: white;
+  }
+
+  .middle-pfp {
+    width: 2%;
+    min-width: 30px;
+    border-radius: 50px;
+    margin: 5px 5px 5px 0px;
+  }
+
+  .playlist-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .liked-songs-info {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .name-text {
+    font-weight: bold;
+  }
+
+  .song-count-text {
+    opacity: .7;
+
+  }
+
+  .second-middle {
+
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10px;
+  }
+
+  .dot-image {
+    height: 50px;
+  }
+
+  .shuffle-image,
+  .download-image {
+    height: 25px;
+    opacity: 0.7;
+    padding: 5px 5px 5px 5px;
+
+  }
+
+  .second-middle-images {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .middle-search-icon,
+  .middle-list-icon {
+    height: 20px;
+    opacity: 0.6;
+    vertical-align: middle;
+
+  }
+
+  .date-added-text {
+    font-weight: bold;
+    opacity: 0.7;
+    font-size: small;
+    padding-left: 10px;
+    padding-right: 10px;
+
+  }
+
+  .second-middle.right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+</style>
+
+<body>
+
+  <div class="page-flexbox">
+    <div class="header">
+      <!--header left-->
+      <div class="header-left">
+        <img class="three-dots" src="Header-Icons/threedots.png">
+        <img src="Header-Icons/left-chevron.png" class="left-chevron">
+        <img src="Header-Icons/right-chevron.png" class="right-chevron">
+      </div>
+
+
+      <!--header middle-->
+      <div class="header-middle">
+
+        <div><img src="Header-Icons/home.png" class="home-icon"> </div>
+
+        <div class="search-container">
+          <div><img src="Header-Icons/search.png" class="search-icon"></div>
+          <div><input type="search" placeholder="What do you want to play?" class="search-bar"></div>
+          <div><img src="Header-Icons/folder.png" class="folder-icon"></div>
+        </div>
+
+
+      </div>
+
+      <!--header-right-->
+      <div class="header-right">
+        <div><img src="Header-Icons/bell.png" class="notification-icon"></div>
+        <div><img src="Header-Icons/friends.png" class="friends-icon"></div>
+        <div><img src="Header-Icons/pfp-image.jpg" class="pfp-image"></div>
+      </div>
+
+    </div>
+
+
+    <div class="middle">
+      <div class="library">
+        <!--top of library-->
+
+        <div class="library-header">
+          <div class="library-title">Your Library</div>
+          <div class="library-icons"><img src="side-icons/plus.png" class="plus-icon">
+            <img src="side-icons/expand.png" class="expand-icon">
+
+          </div>
+        </div>
+        <!--second part of library-->
+        <div class="library-options-container">
+          <p class="library-options">Playlists</p>
+          <p class="library-options">Albums</p>
+          <p class="library-options">Artists</p>
+
+          <!--third part of library-->
+          <div class="library-recents-container">
+            <div>
+              <img src="Header-Icons/search.png" class="side-search-icon">
+            </div>
+
+            <div class="recents-wrapper">
+              <div class="recents-text">Recents</div>
+              <img src="side-icons/list.png" class="list-icon">
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+        </div>
+
+        <div class="scrolling-frame" id="frame-container">
+          <!-- Frames will be added here by JavaScript -->
+        </div>
+
+      </div>
+      <div class="main-area">
+        <div class="top-middle"> <!--Top area of middle -->
+          <div><img src="Album-covers/Album-cover-1.png" class="main-area-image"></div>
+          <div class="liked-songs-info">
+            <p class="playlist-text">Playlist</p>
+            <p class="liked-songs">Liked Songs</p>
+            <div class="playlist-info">
+              <img src="Header-Icons/pfp-image.jpg" class="middle-pfp">
+              <span class="name-text">Maysoon •</span>
+              <span class="song-count-text">&nbsp;2,646 songs</span>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="second-middle"><!--second area of middle -->
+          <div class="second-middle-images"><img src="Middle-icons/circle.png" class="dot-image"><img
+              src="Middle-icons/shuffle.png" class="shuffle-image"><img src="Middle-icons/download-circular-button.png"
+              class="download-image"></div>
+
+          <div class="second-middle-right"><img src="Header-Icons/search.png" class="middle-search-icon"><span
+              class="date-added-text">Date added</span><img src="side-icons/list.png" class="middle-list-icon"></div>
+        </div>
+      </div>
+      <div class="artist-info"></div>
+    </div>
+    <div class="bottom">
+      <div class="play-bar">
+        <div class="song">
+          <img src="Album-covers/Album-cover-1.png" class="song-image">
+          <div>
+            <p class="song-title">Old Fashioned Love</p>
+            <p class="song-artist">Kid Travis</p>
+          </div>
+          <div><img src="Bottom-icons/liked.png" class="liked"></div>
+        </div>
+        <div class="song-progress"></div>
+        <div class="options">
+          <img src="Bottom-icons/player-view.png" class="player-view">
+          <img src="Bottom-icons/microphone.png" class="microphone">
+          <img src="Bottom-icons/queue.png" class="queue">
+          <img src="Bottom-icons/connect.png" class="connect">
+          <img src="Bottom-icons/volume.png" class="volume">
+
+          <div class="volume-outer">
+            <div class="volume-inner">
+
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div> <!-- Mostly searched up this part -->
+  <script>
+
+    function createFrame(imageSrc, title, description) {
+      const container = document.getElementById("frame-container");
+
+      const frameHTML = `
+      <div class="frame">
+        <div class="album-div">
+          <img src="${imageSrc}" class="side-album-images">
+          <div class="arrow-div"><img src="side-icons/play.png" class="arrow-icon"></div>
+        </div>
+        <div>
+          <p class="library-names">${title}</p>
+          <p class="library-details">${description}</p>
+        </div>
+      </div>
+    `;
+
+      container.insertAdjacentHTML("beforeend", frameHTML);
+    }
+
+
+    createFrame("Album-covers/Album-cover-1.png", "Liked songs", "Playlist • 2,645 songs");
+    createFrame("Album-covers/Album-cover-2.png", "Glass Animals", "Artist");
+    createFrame("Album-covers/Album-cover-1.png", "Rock Classics", "Playlist • 809 songs");
+    createFrame("Album-covers/Album-cover-1.png", "Rock Classics", "Playlist • 809 songs");
+    createFrame("Album-covers/Album-cover-1.png", "Liked songs", "Playlist • 2,645 songs");
+    createFrame("Album-covers/Album-cover-2.png", "Glass Animals", "Artist");
+    createFrame("Album-covers/Album-cover-1.png", "Rock Classics", "Playlist • 809 songs");
+    createFrame("Album-covers/Album-cover-1.png", "Rock Classics", "Playlist • 809 songs");
+    createFrame("Album-covers/Album-cover-1.png", "Liked songs", "Playlist • 2,645 songs");
+    createFrame("Album-covers/Album-cover-2.png", "Glass Animals", "Artist");
+    createFrame("Album-covers/Album-cover-1.png", "Rock Classics", "Playlist • 809 songs");
+    createFrame("Album-covers/Album-cover-1.png", "Rock Classics", "Playlist • 809 songs");
+
+
+  </script>
+
+
+</body>
+
+</html>

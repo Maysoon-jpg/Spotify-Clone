@@ -1,0 +1,197 @@
+  .library {
+    height: 100%;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 10px;
+    width: 300px;
+    background-color: #3c3f44;
+
+  }
+
+
+  .artist-info {
+    height: 100%;
+    margin-left: 10px;
+
+
+    border-radius: 10px;
+    width: 250px;
+    background-color: #3c3f44;
+
+  }
+
+
+
+
+
+
+
+
+  .library-title {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 15px;
+    flex: 1;
+  }
+
+  .plus-icon {
+    height: 15px;
+    margin-top: 15px;
+    margin-left: 10px;
+    background-color: #242629;
+    padding: 5px 5px 5px 5px;
+    border-radius: 50px;
+
+
+  }
+
+  .library-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+    height: 40px;
+  }
+
+  .library-icons {
+    width: 100px;
+  }
+
+  .expand-icon {
+    height: 15px;
+    margin-top: 15px;
+    margin-left: 10px;
+    opacity: 0.6;
+    padding: 5px 5px 5px 5px;
+    border-radius: 50px;
+
+
+  }
+
+  .library-options {
+
+    display: inline;
+    margin: 20px 20px 20px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: small;
+    font-weight: bold;
+    opacity: 0.8;
+  }
+
+  .library-options-container {
+    height: 30px;
+
+  }
+
+  .library-recents-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    height: 25px;
+  }
+
+  .side-search-icon {
+    height: 20px;
+    padding-left: 15px;
+
+  }
+
+  .recents-text {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 10px;
+    font-size: small;
+    opacity: 0.6;
+    display: inline;
+    padding-top: 0px;
+
+
+  }
+
+  .list-icon {
+    height: 15px;
+    opacity: 0.6;
+    margin-right: 15px;
+  }
+
+  .recents-wrapper {
+    display: flex;
+    align-items: center;
+    /* Vertically aligns both the text and the image */
+    gap: 5px;
+    /* Optional, for spacing between text and icon */
+  }
+
+  .scrolling-frame {
+    height: 680px;
+    width: 100%;
+
+    overflow-y: scroll;
+    margin-top: 30px;
+  }
+
+  .frame {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+  }
+
+  .frame:hover {
+    background-color: #2d3033;
+  }
+
+ .frame:hover .arrow-icon {
+  opacity: 0.8;
+}
+
+
+
+  .side-album-images {
+    height: 50px;
+    border-radius: 10px;
+    margin-left: 10px;
+  }
+
+  .library-names,
+  .library-details {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-left: 10px;
+    margin-top: 3px;
+    margin-bottom: 0px;
+  }
+
+  .library-names {
+    font-weight: bold;
+  }
+
+  .library-details {
+    font-size: small;
+    opacity: 0.6;
+  }
+
+  .album-div {
+    position: relative;
+  }
+
+  .arrow-div {
+    position: absolute;
+    top: 15px;
+    left: 25px;
+
+  }
+
+  .arrow-icon {
+    height: 20px;
+    opacity: 0;
+  }
