@@ -170,6 +170,91 @@
     flex-direction: row;
     align-items: center;
   }
+
+  .third-section{
+    padding-top: 20px;
+  }
+
+  .genre-types{
+    font-size: medium;
+    font-weight: bold;
+    opacity: 0.9;
+  
+  }
+
+  .fourth-area-div{
+ 
+    width: 99%;
+    height: 35px;
+    margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   border-bottom: 1px solid rgba(128, 128, 128, 0.459);
+  }
+  .tag-fourth{
+    width: 25px;
+    margin-left: 20px;
+  }
+  .title-fourth{
+    width: 450px;
+    border-right: 1px solid rgba(131, 131, 131, 0);
+  }
+
+  .album-fourth{
+    width: 400px;
+    padding-left: 20px;
+    border-right: 1px solid rgba(131, 131, 131, 0);
+    
+  
+    
+    
+  }
+
+  .fourth-area-div:hover .title-fourth,
+  .fourth-area-div:hover .date-fourth,
+  .fourth-area-div:hover .album-fourth {
+    border-right: 1px solid grey
+    
+  }
+
+  .date-fourth{
+      flex: 1;
+      min-width: 300px;
+      margin-left: 20px;
+      border-right: 1px solid rgba(131, 131, 131, 0);
+
+  }
+
+  .clock-img{
+    height: 20px;
+    margin-left: 50px;
+  }
+
+  .clock-fourth{
+    width: 80px;
+   
+  }
+
+  .blue-arrow{
+    height: 15px;
+    padding-left: 5px;
+  }
+
+  .white-arrow{
+    height: 15px;
+    opacity: 0;
+    margin-left: 10px;
+  }
+
+  .fourth-area-div:hover .white-arrow{
+    opacity: 1;
+  }
+  .title-fourth, .album-fourth, .date-fourth, .tag-fourth, .clock-fourth{
+    font-size: small;
+    opacity: 0.6;
+    font-weight: bold;
+  }
 </style>
 
 <body>
@@ -274,6 +359,27 @@
           <div class="second-middle-right"><img src="Header-Icons/search.png" class="middle-search-icon"><span
               class="date-added-text">Date added</span><img src="side-icons/list.png" class="middle-list-icon"></div>
         </div>
+        <!--third area of middle -->
+
+        <div class="third-section">
+          <span class="genre-types">Pop &nbsp; &nbsp; Chill &nbsp; &nbsp;Pop Rock &nbsp; &nbsp; Beats &nbsp; &nbsp;Dark &nbsp; &nbsp; Fast &nbsp; &nbsp; Sad &nbsp; &nbsp; Nostalgia &nbsp; &nbsp; Rap &nbsp; &nbsp; Bubblegum Pop &nbsp; &nbsp; Electronic  </span>
+
+        </div>
+
+         <!--4th area of middle -->
+         <div class="fourth-area-div">
+          <div class="tag-fourth">#</div>
+          <div class="title-fourth">Title</div>
+          <div class="album-fourth">Album</div>
+          <div class="date-fourth">Date Added <img src="Middle-icons/blue-arrow.png" class="blue-arrow"></div>
+          <div class="clock-fourth"><img src="Middle-icons/clock.png" class="clock-img"></div>
+          <div class="arrow-fourth"><img src="Middle-icons/white-arrow.png" class="white-arrow"></div>
+         </div>
+
+         
+         <!--4th area of middle -->
+         <div></div>
+
       </div>
       <div class="artist-info"></div>
     </div>
