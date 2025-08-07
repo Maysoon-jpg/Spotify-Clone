@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -8,7 +7,8 @@
   <link rel="stylesheet" href="Styles/Page.css">
   <link rel="stylesheet" href="Styles/Bottom.css">
   <link rel="stylesheet" href="Styles/Side-bar.css">
- <link rel="stylesheet" href="Styles/Middle.css">
+  <link rel="stylesheet" href="Styles/Middle.css">
+    <link rel="stylesheet" href="Styles/About-Artist.css">
 </head>
 <style>
   .scrolling-frame::-webkit-scrollbar {
@@ -51,12 +51,7 @@
     border-radius: 10px;
   }
 
-
-
-
   
-
-
 
   
 </style>
@@ -161,10 +156,10 @@
               <img src="Middle-icons/circle.png" class="dot-image">
               <div><img src="Middle-icons/pause.png" class="play-triangle"></div>
             </div>
-            
-            <img
-              src="Middle-icons/shuffle.png" class="shuffle-image"><img src="Middle-icons/download-circular-button.png"
-              class="download-image"></div>
+
+            <img src="Middle-icons/shuffle.png" class="shuffle-image"><img
+              src="Middle-icons/download-circular-button.png" class="download-image">
+          </div>
 
           <div class="second-middle-right"><img src="Header-Icons/search.png" class="middle-search-icon"><span
               class="date-added-text">Date added</span><img src="side-icons/list.png" class="middle-list-icon"></div>
@@ -191,38 +186,57 @@
 
         <!--5th area of middle -->
         <div class="fifth-div">
-          <div class="fifth-frame"> 
+          <div class="fifth-frame">
             <div class="fifth-frame-first">
               <div class="number-counter">
                 <img class="sound-waves" src="Middle-icons/sound.gif"></img>
                 <div><img src="Middle-icons/play.png" class="fifth-play-icon"></div>
               </div>
 
-              <img src="Album-covers/Album-cover-3.png" class="middle-album-cover">
+              <img src="Album-covers/Album-cover-4.png" class="middle-album-cover">
               <div class="songname-artist">
-                <div class="middle-song-title" style="color: #1769d5;">I Need You</div>
-                <div class="middle-song-artist">RIDON</div>
+                <div class="middle-song-title" style="color: #1769d5;">IN BETWEEN</div>
+                <div class="middle-song-artist">Kiremi</div>
               </div>
 
 
 
 
             </div>
-            <div class="middle-album">I Need You</div>
-            <div class="middle-date">2 days ago</div>
+            <div class="middle-album">IN BETWEEN</div>
+            <div class="middle-date">5 hours ago</div>
             <div class="middle-time">
               <img src="Bottom-icons/liked.png" class="fifth-liked">
               <span>2:25</span>
               <img src="Header-Icons/threedots.png" class="song-options">
             </div>
           </div>
-           
-          
+
+
 
         </div>
 
       </div>
-      <div class="artist-info"></div>
+
+      <div class="artist-info">
+        <div class="artist-info-title"><p class="info-title-text">Liked Songs</p></div>
+        <div><img src="Album-covers/Album-cover-4.png" class="artist-info-album"></div>
+        <div class="artist-info-third">
+          <div class="artistinfo-songname">IN BETWEEN</div>
+          <div class="artistinfo-songartist">Kiremi</div>
+
+        </div>
+        <div class="centreartist-image"><img src="Album-covers/artist-info.png" class="artist-info-image"></div>
+        <div class="artist-info-bottom">
+          <p>Kiremi</p>
+          <div>
+            <div></div>
+            <div><button></button></div>
+          </div>
+        </div>
+
+        
+      </div>
     </div>
     <div class="bottom">
       <div class="play-bar">
@@ -296,17 +310,17 @@
 
 
     function addFifthFrame({
-  imageSrc,
-  songTitle,
-  artistName,
-  albumName,
-  dateText,
-  timeText
-}) {
-  const container = document.querySelector('.fifth-div');
-  const frameCount = container.children.length + 1;
+      imageSrc,
+      songTitle,
+      artistName,
+      albumName,
+      dateText,
+      timeText
+    }) {
+      const container = document.querySelector('.fifth-div');
+      const frameCount = container.children.length + 1;
 
-  const frameHTML = `
+      const frameHTML = `
     <div class="fifth-frame"> 
       <div class="fifth-frame-first">
         <div class="number-counter">
@@ -331,8 +345,8 @@
     </div>
   `;
 
-  container.insertAdjacentHTML("beforeend", frameHTML);
-}
+      container.insertAdjacentHTML("beforeend", frameHTML);
+    }
 
 
 
@@ -354,41 +368,41 @@
 
 
     addFifthFrame({
-  imageSrc: "Album-covers/Album-cover-3.png",
-  songTitle: "I Need You",
-  artistName: "RIDON",
-  albumName: "I Need You",
-  dateText: "2 days ago",
-  timeText: "2:25"
-});
+      imageSrc: "Album-covers/Album-cover-3.png",
+      songTitle: "I Need You",
+      artistName: "RIDON",
+      albumName: "I Need You",
+      dateText: "2 days ago",
+      timeText: "2:25"
+    });
 
-addFifthFrame({
-  imageSrc: "Album-covers/Album-cover-3.png",
-  songTitle: "I Need You",
-  artistName: "RIDON",
-  albumName: "I Need You",
-  dateText: "2 days ago",
-  timeText: "2:25"
-});
+    addFifthFrame({
+      imageSrc: "Album-covers/Album-cover-3.png",
+      songTitle: "I Need You",
+      artistName: "RIDON",
+      albumName: "I Need You",
+      dateText: "2 days ago",
+      timeText: "2:25"
+    });
 
 
-addFifthFrame({
-  imageSrc: "Album-covers/Album-cover-3.png",
-  songTitle: "I Need You",
-  artistName: "RIDON",
-  albumName: "I Need You",
-  dateText: "2 days ago",
-  timeText: "2:25"
-});
+    addFifthFrame({
+      imageSrc: "Album-covers/Album-cover-3.png",
+      songTitle: "I Need You",
+      artistName: "RIDON",
+      albumName: "I Need You",
+      dateText: "2 days ago",
+      timeText: "2:25"
+    });
 
-addFifthFrame({
-  imageSrc: "Album-covers/Album-cover-3.png",
-  songTitle: "I Need You",
-  artistName: "RIDON",
-  albumName: "I Need You",
-  dateText: "2 days ago",
-  timeText: "2:25"
-});
+    addFifthFrame({
+      imageSrc: "Album-covers/Album-cover-3.png",
+      songTitle: "I Need You",
+      artistName: "RIDON",
+      albumName: "I Need You",
+      dateText: "2 days ago",
+      timeText: "2:25"
+    });
 
 
 
