@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -7,7 +8,7 @@
   <link rel="stylesheet" href="Styles/Page.css">
   <link rel="stylesheet" href="Styles/Bottom.css">
   <link rel="stylesheet" href="Styles/Side-bar.css">
-
+ <link rel="stylesheet" href="Styles/Middle.css">
 </head>
 <style>
   .scrolling-frame::-webkit-scrollbar {
@@ -53,298 +54,11 @@
 
 
 
-  .middle {
-
-    flex: 1;
-    display: flex;
-    flex-direction: row;
-
-
-
-  }
-
-  .top-middle {
-    height: 200px;
-    width: 100%;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-end;
-
-
-  }
-
-  .main-area-image {
-    width: 80%;
-
-    min-width: 180px;
-    height: auto;
-
-
-
-    border-radius: 10px;
-
-  }
-
-  .main-area {
-    height: 93%;
-
-    margin-left: 10px;
-    padding-top: 60px;
-    padding-left: 30px;
-
-
-    border-radius: 10px;
-    flex: 1;
-    background-color: #3c3f44;
-    overflow-y: scroll;
-
-  }
-
-  .playlist-text {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: small;
-    margin: 0px 0px 0px 0px;
-  }
-
-  .liked-songs {
-    margin: 10px 0px 0px 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 4vw;
-    color: white;
-  }
-
-  .middle-pfp {
-    width: 2%;
-    min-width: 30px;
-    border-radius: 50px;
-    margin: 5px 5px 5px 0px;
-  }
-
-  .playlist-info {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .liked-songs-info {
-    display: flex;
-    flex-direction: column;
-
-  }
-
-  .name-text {
-    font-weight: bold;
-  }
-
-  .song-count-text {
-    opacity: .7;
-
-  }
-
-  .second-middle {
-
-    margin-top: 15px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-right: 10px;
-  }
-
-  .dot-image {
-    height: 50px;
-  }
-
-  .shuffle-image,
-  .download-image {
-    height: 25px;
-    opacity: 0.7;
-    padding: 5px 5px 5px 5px;
-
-  }
-
-  .second-middle-images {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .middle-search-icon,
-  .middle-list-icon {
-    height: 20px;
-    opacity: 0.6;
-    vertical-align: middle;
-
-  }
-
-  .date-added-text {
-    font-weight: bold;
-    opacity: 0.7;
-    font-size: small;
-    padding-left: 10px;
-    padding-right: 10px;
-
-  }
-
-  .second-middle.right {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .third-section {
-    padding-top: 20px;
-  }
-
-  .genre-types {
-    font-size: medium;
-    font-weight: bold;
-    opacity: 0.9;
-
-  }
-
-  .fourth-area-div {
-
-    width: 99%;
-    height: 35px;
-    margin-top: 35px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.459);
-  }
-
-  .tag-fourth {
-    width: 25px;
-    margin-left: 20px;
-  }
-
-  .title-fourth {
-    width: 450px;
-    border-right: 1px solid rgba(131, 131, 131, 0);
-  }
-
-  .album-fourth {
-    width: 400px;
-    padding-left: 20px;
-    border-right: 1px solid rgba(131, 131, 131, 0);
-
-
-
-
-  }
-
-  .fourth-area-div:hover .title-fourth,
-  .fourth-area-div:hover .date-fourth,
-  .fourth-area-div:hover .album-fourth {
-    border-right: 1px solid grey
-  }
-
-  .date-fourth {
-    flex: 1;
-    min-width: 300px;
-    margin-left: 20px;
-    border-right: 1px solid rgba(131, 131, 131, 0);
-
-  }
-
-  .clock-img {
-    height: 20px;
-    margin-left: 50px;
-  }
-
-  .clock-fourth {
-    width: 80px;
-
-  }
-
-  .blue-arrow {
-    height: 15px;
-    padding-left: 5px;
-  }
-
-  .white-arrow {
-    height: 15px;
-    opacity: 0;
-    margin-left: 10px;
-  }
-
-  .fourth-area-div:hover .white-arrow {
-    opacity: 1;
-  }
-
-  .title-fourth,
-  .album-fourth,
-  .date-fourth,
-  .tag-fourth,
-  .clock-fourth {
-    font-size: small;
-    opacity: 0.6;
-    font-weight: bold;
-  }
-
-  .fifth-div {
-    height: 100%;
   
-    width: 100%;
-    
-  }
 
-  .fifth-frame{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 10px;
-  }
 
-  .fifth-frame-first{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: 20px;
-  }
 
-  .songname-artist{
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-    width: 370px;
-  }
-
-  .middle-album-cover{
-    height: 45px;
-    border-radius: 7px;
-    margin-left: 10px;
-  }
-
-  .middle-song-artist{
-    font-size: small;
-    margin-top: 3px;
-    opacity: 0.7;
-  }
-
-  .middle-song-title{
-    font-weight: bold;
-  }
-
-  .middle-album{
-     width: 400px;
-    padding-left: 20px;
-    border-right: 1px solid rgba(131, 131, 131, 0);
-    opacity: 0.7;
-  }
-  .middle-date{
-    flex: 1;
-    opacity: 0.7;
-  }
-  .middle-time{
-    width: 70px;
-    opacity: 0.7;
-  }
+  
 </style>
 
 <body>
@@ -442,7 +156,13 @@
 
         </div>
         <div class="second-middle"><!--second area of middle -->
-          <div class="second-middle-images"><img src="Middle-icons/circle.png" class="dot-image"><img
+          <div class="second-middle-images">
+            <div class="play-circle">
+              <img src="Middle-icons/circle.png" class="dot-image">
+              <div><img src="Middle-icons/pause.png" class="play-triangle"></div>
+            </div>
+            
+            <img
               src="Middle-icons/shuffle.png" class="shuffle-image"><img src="Middle-icons/download-circular-button.png"
               class="download-image"></div>
 
@@ -473,10 +193,14 @@
         <div class="fifth-div">
           <div class="fifth-frame"> 
             <div class="fifth-frame-first">
-              <span>1</span>
+              <div class="number-counter">
+                <img class="sound-waves" src="Middle-icons/sound.gif"></img>
+                <div><img src="Middle-icons/play.png" class="fifth-play-icon"></div>
+              </div>
+
               <img src="Album-covers/Album-cover-3.png" class="middle-album-cover">
               <div class="songname-artist">
-                <div class="middle-song-title">I Need You</div>
+                <div class="middle-song-title" style="color: #1769d5;">I Need You</div>
                 <div class="middle-song-artist">RIDON</div>
               </div>
 
@@ -486,7 +210,11 @@
             </div>
             <div class="middle-album">I Need You</div>
             <div class="middle-date">2 days ago</div>
-            <div class="middle-time">2:25</div>
+            <div class="middle-time">
+              <img src="Bottom-icons/liked.png" class="fifth-liked">
+              <span>2:25</span>
+              <img src="Header-Icons/threedots.png" class="song-options">
+            </div>
           </div>
            
           
@@ -567,6 +295,47 @@
     }
 
 
+    function addFifthFrame({
+  imageSrc,
+  songTitle,
+  artistName,
+  albumName,
+  dateText,
+  timeText
+}) {
+  const container = document.querySelector('.fifth-div');
+  const frameCount = container.children.length + 1;
+
+  const frameHTML = `
+    <div class="fifth-frame"> 
+      <div class="fifth-frame-first">
+        <div class="number-counter">
+          <span class="number">${frameCount}</span>
+          <div><img src="Middle-icons/play.png" class="fifth-play-icon"></div>
+        </div>
+
+        <img src="${imageSrc}" class="middle-album-cover">
+        <div class="songname-artist">
+          <div class="middle-song-title">${songTitle}</div>
+          <div class="middle-song-artist">${artistName}</div>
+        </div>
+      </div>
+
+      <div class="middle-album">${albumName}</div>
+      <div class="middle-date">${dateText}</div>
+      <div class="middle-time">
+        <img src="Bottom-icons/liked.png" class="fifth-liked">
+        <span>${timeText}</span>
+        <img src="Header-Icons/threedots.png" class="song-options">
+      </div>
+    </div>
+  `;
+
+  container.insertAdjacentHTML("beforeend", frameHTML);
+}
+
+
+
 
 
 
@@ -582,6 +351,46 @@
     createFrame("Album-covers/Album-cover-2.png", "Glass Animals", "Artist");
     createFrame("Album-covers/Album-cover-1.png", "Rock Classics", "Playlist • 809 songs");
     createFrame("Album-covers/Album-cover-1.png", "Rock Classics", "Playlist • 809 songs");
+
+
+    addFifthFrame({
+  imageSrc: "Album-covers/Album-cover-3.png",
+  songTitle: "I Need You",
+  artistName: "RIDON",
+  albumName: "I Need You",
+  dateText: "2 days ago",
+  timeText: "2:25"
+});
+
+addFifthFrame({
+  imageSrc: "Album-covers/Album-cover-3.png",
+  songTitle: "I Need You",
+  artistName: "RIDON",
+  albumName: "I Need You",
+  dateText: "2 days ago",
+  timeText: "2:25"
+});
+
+
+addFifthFrame({
+  imageSrc: "Album-covers/Album-cover-3.png",
+  songTitle: "I Need You",
+  artistName: "RIDON",
+  albumName: "I Need You",
+  dateText: "2 days ago",
+  timeText: "2:25"
+});
+
+addFifthFrame({
+  imageSrc: "Album-covers/Album-cover-3.png",
+  songTitle: "I Need You",
+  artistName: "RIDON",
+  albumName: "I Need You",
+  dateText: "2 days ago",
+  timeText: "2:25"
+});
+
+
 
 
   </script>
