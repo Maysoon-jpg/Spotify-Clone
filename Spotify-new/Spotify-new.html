@@ -29,6 +29,28 @@
     border-radius: 10px;
   }
 
+  /*middle scroll*/
+
+  .main-area::-webkit-scrollbar {
+    background-color: #56617200;
+    /* Hide */
+  }
+
+  .main-area:hover::-webkit-scrollbar {
+    width: 13px;
+    /* Show on hover */
+  }
+
+  .main-area:hover::-webkit-scrollbar-track {
+    background-color: #24262900;
+  }
+
+  .main-area:hover::-webkit-scrollbar-thumb {
+    background-color: rgb(43, 80, 247);
+    border-radius: 10px;
+  }
+
+
 
 
   .middle {
@@ -62,10 +84,12 @@
 
 
     border-radius: 10px;
+
   }
 
   .main-area {
-    height: 100%;
+    height: 93%;
+
     margin-left: 10px;
     padding-top: 60px;
     padding-left: 30px;
@@ -74,6 +98,7 @@
     border-radius: 10px;
     flex: 1;
     background-color: #3c3f44;
+    overflow-y: scroll;
 
   }
 
@@ -171,89 +196,154 @@
     align-items: center;
   }
 
-  .third-section{
+  .third-section {
     padding-top: 20px;
   }
 
-  .genre-types{
+  .genre-types {
     font-size: medium;
     font-weight: bold;
     opacity: 0.9;
-  
+
   }
 
-  .fourth-area-div{
- 
+  .fourth-area-div {
+
     width: 99%;
     height: 35px;
     margin-top: 35px;
     display: flex;
     flex-direction: row;
     align-items: center;
-   border-bottom: 1px solid rgba(128, 128, 128, 0.459);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.459);
   }
-  .tag-fourth{
+
+  .tag-fourth {
     width: 25px;
     margin-left: 20px;
   }
-  .title-fourth{
+
+  .title-fourth {
     width: 450px;
     border-right: 1px solid rgba(131, 131, 131, 0);
   }
 
-  .album-fourth{
+  .album-fourth {
     width: 400px;
     padding-left: 20px;
     border-right: 1px solid rgba(131, 131, 131, 0);
-    
-  
-    
-    
+
+
+
+
   }
 
   .fourth-area-div:hover .title-fourth,
   .fourth-area-div:hover .date-fourth,
   .fourth-area-div:hover .album-fourth {
     border-right: 1px solid grey
-    
   }
 
-  .date-fourth{
-      flex: 1;
-      min-width: 300px;
-      margin-left: 20px;
-      border-right: 1px solid rgba(131, 131, 131, 0);
+  .date-fourth {
+    flex: 1;
+    min-width: 300px;
+    margin-left: 20px;
+    border-right: 1px solid rgba(131, 131, 131, 0);
 
   }
 
-  .clock-img{
+  .clock-img {
     height: 20px;
     margin-left: 50px;
   }
 
-  .clock-fourth{
+  .clock-fourth {
     width: 80px;
-   
+
   }
 
-  .blue-arrow{
+  .blue-arrow {
     height: 15px;
     padding-left: 5px;
   }
 
-  .white-arrow{
+  .white-arrow {
     height: 15px;
     opacity: 0;
     margin-left: 10px;
   }
 
-  .fourth-area-div:hover .white-arrow{
+  .fourth-area-div:hover .white-arrow {
     opacity: 1;
   }
-  .title-fourth, .album-fourth, .date-fourth, .tag-fourth, .clock-fourth{
+
+  .title-fourth,
+  .album-fourth,
+  .date-fourth,
+  .tag-fourth,
+  .clock-fourth {
     font-size: small;
     opacity: 0.6;
     font-weight: bold;
+  }
+
+  .fifth-div {
+    height: 100%;
+  
+    width: 100%;
+    
+  }
+
+  .fifth-frame{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .fifth-frame-first{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 20px;
+  }
+
+  .songname-artist{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    width: 370px;
+  }
+
+  .middle-album-cover{
+    height: 45px;
+    border-radius: 7px;
+    margin-left: 10px;
+  }
+
+  .middle-song-artist{
+    font-size: small;
+    margin-top: 3px;
+    opacity: 0.7;
+  }
+
+  .middle-song-title{
+    font-weight: bold;
+  }
+
+  .middle-album{
+     width: 400px;
+    padding-left: 20px;
+    border-right: 1px solid rgba(131, 131, 131, 0);
+    opacity: 0.7;
+  }
+  .middle-date{
+    flex: 1;
+    opacity: 0.7;
+  }
+  .middle-time{
+    width: 70px;
+    opacity: 0.7;
   }
 </style>
 
@@ -338,7 +428,7 @@
       </div>
       <div class="main-area">
         <div class="top-middle"> <!--Top area of middle -->
-          <div><img src="Album-covers/Album-cover-1.png" class="main-area-image"></div>
+          <div><img src="Album-covers/Liked-songs.png" class="main-area-image"></div>
           <div class="liked-songs-info">
             <p class="playlist-text">Playlist</p>
             <p class="liked-songs">Liked Songs</p>
@@ -362,23 +452,46 @@
         <!--third area of middle -->
 
         <div class="third-section">
-          <span class="genre-types">Pop &nbsp; &nbsp; Chill &nbsp; &nbsp;Pop Rock &nbsp; &nbsp; Beats &nbsp; &nbsp;Dark &nbsp; &nbsp; Fast &nbsp; &nbsp; Sad &nbsp; &nbsp; Nostalgia &nbsp; &nbsp; Rap &nbsp; &nbsp; Bubblegum Pop &nbsp; &nbsp; Electronic  </span>
+          <span class="genre-types">Pop &nbsp; &nbsp; Chill &nbsp; &nbsp;Pop Rock &nbsp; &nbsp; Beats &nbsp; &nbsp;Dark
+            &nbsp; &nbsp; Fast &nbsp; &nbsp; Sad &nbsp; &nbsp; Nostalgia &nbsp; &nbsp; Rap &nbsp; &nbsp; Bubblegum Pop
+            &nbsp; &nbsp; Electronic </span>
 
         </div>
 
-         <!--4th area of middle -->
-         <div class="fourth-area-div">
+        <!--4th area of middle -->
+        <div class="fourth-area-div">
           <div class="tag-fourth">#</div>
           <div class="title-fourth">Title</div>
           <div class="album-fourth">Album</div>
           <div class="date-fourth">Date Added <img src="Middle-icons/blue-arrow.png" class="blue-arrow"></div>
           <div class="clock-fourth"><img src="Middle-icons/clock.png" class="clock-img"></div>
           <div class="arrow-fourth"><img src="Middle-icons/white-arrow.png" class="white-arrow"></div>
-         </div>
+        </div>
 
-         
-         <!--4th area of middle -->
-         <div></div>
+
+        <!--5th area of middle -->
+        <div class="fifth-div">
+          <div class="fifth-frame"> 
+            <div class="fifth-frame-first">
+              <span>1</span>
+              <img src="Album-covers/Album-cover-3.png" class="middle-album-cover">
+              <div class="songname-artist">
+                <div class="middle-song-title">I Need You</div>
+                <div class="middle-song-artist">RIDON</div>
+              </div>
+
+
+
+
+            </div>
+            <div class="middle-album">I Need You</div>
+            <div class="middle-date">2 days ago</div>
+            <div class="middle-time">2:25</div>
+          </div>
+           
+          
+
+        </div>
 
       </div>
       <div class="artist-info"></div>
@@ -434,8 +547,30 @@
       container.insertAdjacentHTML("beforeend", frameHTML);
     }
 
+    function createSongFrame(imageSrc, title, artist, album, date, time) {
+      const container = document.getElementById("frame-container");
 
-    createFrame("Album-covers/Album-cover-1.png", "Liked songs", "Playlist • 2,645 songs");
+      const frameHTML = `
+      <div class="frame">
+        <div class="album-div">
+          <img src="${imageSrc}" class="side-album-images">
+          <div class="arrow-div"><img src="side-icons/play.png" class="arrow-icon"></div>
+        </div>
+        <div>
+          <p class="library-names">${title}</p>
+          <p class="library-details">${description}</p>
+        </div>
+      </div>
+    `;
+
+      container.insertAdjacentHTML("beforeend", frameHTML);
+    }
+
+
+
+
+
+    createFrame("Album-covers/Liked-songs.png", "Liked songs", "Playlist • 2,645 songs");
     createFrame("Album-covers/Album-cover-2.png", "Glass Animals", "Artist");
     createFrame("Album-covers/Album-cover-1.png", "Rock Classics", "Playlist • 809 songs");
     createFrame("Album-covers/Album-cover-1.png", "Rock Classics", "Playlist • 809 songs");
