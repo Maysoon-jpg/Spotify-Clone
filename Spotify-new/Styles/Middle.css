@@ -49,15 +49,15 @@
 
   .playlist-text {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+
     font-size: small;
     margin: 0px 0px 0px 0px;
   }
 
   .liked-songs {
     margin: 10px 0px 0px 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    
+    font-weight: 600;
     font-size: 4vw;
     color: white;
   }
@@ -82,7 +82,7 @@
   }
 
   .name-text {
-    font-weight: bold;
+    font-weight: 600;
   }
 
   .song-count-text {
@@ -130,7 +130,7 @@
   }
 
   .date-added-text {
-    font-weight: bold;
+    font-weight: 600;
     opacity: 0.7;
     font-size: small;
     padding-left: 10px;
@@ -150,7 +150,7 @@
 
   .genre-types {
     font-size: medium;
-    font-weight: bold;
+    font-weight: 600;
     opacity: 0.9;
 
   }
@@ -232,7 +232,7 @@
   .clock-fourth {
     font-size: small;
     opacity: 0.6;
-    font-weight: bold;
+    font-weight: 600;
   }
 
   .play-circle{
@@ -324,7 +324,7 @@
   }
 
   .middle-song-title{
-    font-weight: bold;
+    font-weight: 600;
   }
 
   .middle-album{
