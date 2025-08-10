@@ -1,71 +1,160 @@
 .artist-info {
-    height: 100%;
-    margin-left: 10px;
+  height: 100%;
+  margin-left: 10px;
 
 
-    border-radius: 10px;
-    width: 250px;
-   background: linear-gradient(180deg, #6028b0, #000000);
-   display: flex;
-   flex-direction: column;
-  
-  }
+  border-radius: 10px;
+  width: 250px;
+  background: linear-gradient(180deg, #6028b0, #201027);
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  padding-left: 10px;
 
-  .artist-info-album{
-    width: 90%;
-    margin-left: 10px;
-    border-radius: 10px;
-    margin-top: 15px;
-  }
+}
 
-  .artist-info-title{
-    height: 50px;
+.artist-info-album {
+  width: 90%;
+  margin-left: 10px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
 
-  }
+.artist-info-title {
+  height: 50px;
 
-  .info-title-text{
-    font-weight: 600;
-    padding-top: 10px;
-    padding-left: 15px;
-  }
+}
 
-  .artist-info-third{
-    display: flex;
-    flex-direction: column;
-    margin-left: 15px;
-    margin-top: 10px;
-
-  }
-
-  .artistinfo-songname{
-    font-weight: 600;
-    font-size: large;
-  }
-
-  .artistinfo-songartist{
-    opacity: 0.7;
-  }
-
-  .centreartist-image{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 170px;
-    overflow: hidden;
-  }
-
-  .artist-info-image{
-    height: 180px;
-    border-radius: 10px;
-   
-    margin-top: 40px;
+.info-title-text {
+  font-weight: 600;
+  padding-top: 10px;
+  padding-left: 15px;
  
-    
-  }
-  .artist-info-bottom{
-    
-       background: linear-gradient(180deg, #4a1f87, #32155b);
-    flex: 1;
-    
-  
-  }
+
+}
+
+.artist-info-third {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  margin-top: 10px;
+
+}
+
+.artistinfo-songname {
+  font-weight: 600;
+  font-size: large;
+}
+
+.artistinfo-songartist {
+  opacity: 0.7;
+}
+
+.centreartist-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 170px;
+
+}
+
+.artist-info-image {
+  height: 180px;
+  border-radius: 10px;
+
+  margin-top:
+    60px;
+
+
+}
+
+.artist-info-bottom {
+
+  background: linear-gradient(180deg, #4a1f87, #32155b);
+  flex: 1;
+  padding-left: 15px;
+  padding-right: 15px;
+
+
+}
+
+.page-flexbox {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+
+}
+
+.artist-name-info {
+  padding-left: 15px;
+}
+
+.artistinfo-fourth {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+
+}
+
+.follow-button {
+  border: 1px, solid rgba(185, 185, 185, 0.76);
+  background-color: #24262900;
+  padding: 8px 15px 8px 15px;
+  border-radius: 30px;
+  color: white;
+  font-family: Circular Std Bold;
+  transition: all, 0.2s;
+}
+
+.follow-button:hover {
+  border: 1px, solid rgb(255, 255, 255);
+}
+
+.monthly-listeners {
+  opacity: 0.7;
+  font-weight: 200;
+}
+
+.info-infotext {
+
+  opacity: 0.7;
+  margin-top: 10px;
+  font-weight: 100;
+  font-size: small;
+}
+
+.credits {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin-top: 90px;
+}
+
+.info-artist {
+  display: flex;
+  flex-direction: column;
+}
+
+.artist-follow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 20px;
+ 
+}
+
+.main-artist{
+  font-size: small;
+  opacity: 0.7;
+}
+
+.composer-div{
+  margin-top: 20px;
+}
+.composer{
+  font-size: small;
+  opacity: 0.7;
+}

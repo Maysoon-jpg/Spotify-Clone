@@ -9,45 +9,4 @@
     }
    
    
-   .page-flexbox{
-      display: flex;
-      flex-direction:column;
-      height: 100%;
-      width: 100%;
-      
-    }
-
-    .artist-name-info{
-      padding-left: 15px;
-    }
-
-    .artistinfo-fourth{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      padding-left: 15px;
-      padding-right: 15px;
-
-    }
-
-    .follow-button{
-      border: 1px, solid rgba(185, 185, 185, 0.76);
-      background-color: #24262900;
-      padding: 8px 15px 8px 15px;
-      border-radius: 30px;
-      color: white;
-      font-family: Circular Std Bold;
-    }
-
-    .monthly-listeners{
-      opacity: 0.7;
-      font-weight: 200;
-    }
-
-    .info-infotext{
-      margin-left: 15px;
-      opacity: 0.7;
-      margin-top: 10px;
-      font-weight: 100;
-      font-size: small;
-    }
+  
